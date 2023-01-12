@@ -1,0 +1,5 @@
+.is-teacher-only {
+    background: no-repeat url(teacher-icon.svg) right;
+    border-left: 2px solid grey;
+    padding-left: 1em;
+}
