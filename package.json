@@ -4,7 +4,7 @@
     "description": "Teacher limit Block Tune for Editor.js",
     "main": "dist/bundle.js",
     "types": "src/index.ts",
-    "repository": "https://github.com/kristougher/teacher-tune",
+    "repository": "https://github.com/kristougher/visibility-tune",
     "author": "Kristoffer Arrild <ka@peytz.dk>",
     "license": "MIT",
     "scripts": {
