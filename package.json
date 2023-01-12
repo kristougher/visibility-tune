@@ -4,8 +4,8 @@
     "description": "Teacher limit Block Tune for Editor.js",
     "main": "dist/bundle.js",
     "types": "src/index.ts",
-    "repository": "https://github.com/editor-js/footnotes",
-    "author": "CodeX Team <team@codex.so>",
+    "repository": "https://github.com/kristougher/teacher-tune",
+    "author": "Kristoffer Arrild <ka@peytz.dk>",
     "license": "MIT",
     "scripts": {
         "build": "webpack --mode production",
@@ -14,7 +14,7 @@
         "test": "yarn build && cypress run"
     },
     "devDependencies": {
-        "@editorjs/editorjs": "2.22.2",
+        "@editorjs/editorjs": "^2.22.2",
         "@types/node": "^16.3.3",
         "@editorjs/table": "^2",
         "@editorjs/header": "^2",
