@@ -8,7 +8,7 @@ interface PluginConfig {
     data: boolean
 }
 
-class TeacherTune {
+export class TeacherTune {
     api: any
     data: any
     isTeacherOnly: boolean
