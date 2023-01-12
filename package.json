@@ -1,5 +1,5 @@
 {
-    "name": "@peytz/teachertune",
+    "name": "@peytz/teacher-tune",
     "version": "1.1.0",
     "description": "Teacher limit Block Tune for Editor.js",
     "main": "dist/bundle.js",

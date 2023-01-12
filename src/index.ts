@@ -1,7 +1,7 @@
 "use strict"
 import { API } from '@editorjs/editorjs';
-import '../assets/TeacherTune.css';
-import '../assets/teacher-icon.svg';
+import styles from '../assets/teacher-tune.module.css';
+//import '../assets/teacher-icon.svg';
 
 interface PluginConfig {
     api: API
@@ -12,12 +12,12 @@ export class TeacherTune {
     api: any
     data: any
     isTeacherOnly: boolean
-    blockContent: Element | null
+    blockContent: HTMLElement
 
     constructor({ api, data }: PluginConfig) {
         this.api = api;
         this.isTeacherOnly = data;
-        this.blockContent = null;
+        this.blockContent = new HTMLElement;
     }
 
     static get isTune() {
