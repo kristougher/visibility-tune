@@ -1,15 +1,10 @@
 "use strict"
-//import styles from '../assets/teacher-tune.module.css';
-//import teacherMenuIcon from '../assets/teacher-menu-icon.module.svg';
 
-type PluginConfig = {
-    data: boolean
-}
 export default class TeacherTune {
     data: boolean
     blockContent: any
 
-    constructor({ data }: PluginConfig) {
+    constructor({ data }: any) {
         if (!data) {
             data = false;
         }
