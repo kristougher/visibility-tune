@@ -2,7 +2,7 @@
 //import styles from '../assets/teacher-tune.module.css';
 //import teacherMenuIcon from '../assets/teacher-menu-icon.module.svg';
 
-interface PluginConfig {
+type PluginConfig = {
     data: boolean
 }
 export default class TeacherTune {
