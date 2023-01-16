@@ -1,6 +1,6 @@
 "use strict"
 
-export default class TeacherTune {
+export class TeacherTune {
     data: boolean
     blockContent: any
 

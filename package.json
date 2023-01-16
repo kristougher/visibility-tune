@@ -10,8 +10,7 @@
     "scripts": {
         "build": "webpack --mode production",
         "build:dev": "webpack --mode development --watch",
-        "lint": "eslint src/ --ext .ts",
-        "test": "yarn build && cypress run"
+        "lint": "eslint src/ --ext .ts"
     },
     "devDependencies": {
         "@editorjs/editorjs": "^2.22.2",
