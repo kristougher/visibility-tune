@@ -1,0 +1,70 @@
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script>
+    let exports = {};
+</script>
+<script src="bundle.js"></script>
+<!--
+<script src="../src/index.js"></script>
+-->
+<link href="../assets/teacher-tune.module.css" rel="stylesheet" />
+<div id="editorjs"></div>
+<button onclick="saveEditor()">Gem</button>
+
+<script>
+    const data = {
+        "time": 1672923950632,
+        "blocks": [
+            {
+                "id": "X9j-2-FEe8",
+                "type": "paragraph",
+                "data": {
+                    "text": "hklgjdglæfk"
+                },
+                "tunes": {
+                    "teacherTune": false
+                }
+            },
+            {
+                "id": "Tgb0TJs61E",
+                "type": "paragraph",
+                "data": {
+                    "text": "ghjfgj"
+                },
+                "tunes": {
+                    "teacherTune": true
+                }
+            }
+        ],
+        "version": "2.26.4"
+    };
+
+    window.editor = new EditorJS({
+        autofocus: true,
+        tools: {
+            teacherTune: {
+                class: TeacherTune,
+            },
+            paragraph: {
+                tunes: ['teacherTune',
+                    //     'footnotes'
+                ],
+            },
+            // header: {
+            //     class: Header,
+            //     inlineToolbar: true
+            // },
+
+            // footnotes: {
+            //     class: FootnotesTune,
+            // }
+        },
+        data: data
+    });
+    function saveEditor() {
+        window.editor.save().then((outputData) => {
+            console.log('Article data: ', outputData)
+        }).catch((error) => {
+            console.log('Saving failed: ', error)
+        });
+    }
+</script>
